@@ -9,7 +9,10 @@
     "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-skeleton-css": "^1.1.0",
+    "typewriter-effect": "^2.17.0",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -35,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-image-webp": "^0.7.0"
   }
 }
