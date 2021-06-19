@@ -1,5 +1,11 @@
 /* Global CSS */
 
+body {
+  margin: 0;
+  overflow-y: scroll !important;
+  height: 100vh;
+}
+
 .docs-section {
   margin-top: 2rem !important;
   margin-bottom: 2rem !important;
@@ -12,6 +18,10 @@
 ::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 6px;
+}
+
+img {
+  width: 100%;
 }
 
 /* End of Global CSS */

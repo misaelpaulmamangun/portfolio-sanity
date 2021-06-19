@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
-import Post from "./Components/Post";
+import Project from "./Components/Project";
 import Navbar from "./Components/Navbar";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <Route component={Home} path="/" exact />
         <Route component={About} path="/about" />
         <Route component={Projects} path="/projects" />
-        <Route component={Post} path="/post/:slug" />
+        <Route component={Project} path="/post/:slug" />
       </Switch>
     </BrowserRouter>
   );
