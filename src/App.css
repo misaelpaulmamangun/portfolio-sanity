@@ -150,6 +150,7 @@ header .navbar ul.navbar-list li.navbar-item a {
 
 .about-me .profile-img img {
   width: 60%;
+  border-radius: 50%;
 }
 
 /* End of About ME */
