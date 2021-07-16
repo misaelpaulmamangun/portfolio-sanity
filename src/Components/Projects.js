@@ -26,16 +26,16 @@ export default function Projects() {
     <div className="docs-section">
       <div className="container">
         <h1>Projects</h1>
-        {projectsData && projectsData.map((project, index) => (
-          <Link to={"/project/" + project.slug.current} key={project.slug.current}>
-            <div className="card four columns">
-              <img 
-                src={project.mainImage.asset.url}
-                alt={project.mainImage.alt}  
-              />
-            </div>
-          </Link>
-        ))}
+        <div className="card four columns">
+          {projectsData && projectsData.map((project, index) => (
+            <Link to={"/project/" + project.slug.current} key={project.slug.current}>
+                <img 
+                  src={project.mainImage.asset.url}
+                  alt={project.mainImage.alt}  
+                />
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
