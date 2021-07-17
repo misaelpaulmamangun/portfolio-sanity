@@ -158,11 +158,21 @@ header .navbar ul.navbar-list li.navbar-item a {
 /* Projects Page */
 
 .card {
-    transition: 0.3s;
+    transition: .3s;
     border-radius: 8px;
-    border: 1px solid;
-    padding: 1.5rem;
     margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+
+.item-img {
+    padding: 1rem;
+    border-bottom: 2px solid;
+}
+
+.item-img img {
+    height: 15rem;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* End of Projects Page */
