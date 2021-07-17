@@ -1,3 +1,4 @@
+import BlockContent from "@sanity/block-content-to-react";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../client.js";
@@ -7,7 +8,7 @@ export default function Projects() {
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[_type == "post"] {
+        `*[_type == "project"] {
         title,
         slug,
         mainImage {
@@ -16,7 +17,9 @@ export default function Projects() {
             url
           },
           alt
-        }
+        },
+        link,
+        description
       }`
       )
       .then((data) => {
@@ -25,32 +28,40 @@ export default function Projects() {
       .catch(console.error);
   }, []);
   console.log(projectsData);
+
   return (
     <div className="docs-section">
       <div className="container">
         <h1>Projects</h1>
-        {projectsData &&
-          projectsData.map((project, index) => (
-            <div className="card four columns">
-              <Link
-                to={"/project/" + project.slug.current}
-                key={project.slug.current}
-              >
-                <div class="item-img">
+        <div className="row">
+          {projectsData &&
+            projectsData.map((project, index) => (
+              <div className="card four columns" key={project.slug.current}>
+                <div className="item-img">
                   <img
                     src={project.mainImage.asset.url}
                     alt={project.mainImage.alt}
                   />
                 </div>
-                <div class="item-desc">
-                  <div class="container">
-                    <h1 class="item-title">Title</h1>
-                    <p class="inner-item-desc">Desc</p>
+                <div className="item-desc">
+                  <div className="container">
+                    <Link to={{ pathname: project.link }} target="_blank">
+                      <h6 className="item-title text-center text-bold mt-1">
+                        {project.title}
+                      </h6>
+                    </Link>
+                    <div>
+                      <BlockContent
+                        blocks={project.description}
+                        projectId="je7ph6zr"
+                        dataset="production"
+                      />
+                    </div>
                   </div>
                 </div>
-              </Link>
-            </div>
-          ))}
+              </div>
+            ))}
+        </div>
       </div>
     </div>
   );

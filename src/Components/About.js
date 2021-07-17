@@ -2,7 +2,7 @@ import React from "react";
 import profilePNG from "../img/profile.png";
 export default function About() {
   return (
-    <div className="docs-section about-me">
+    <div className="docs-section about-me pb-2">
       <div className="container">
         <div className="row">
           <div className="five columns">
