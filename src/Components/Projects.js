@@ -29,10 +29,18 @@ export default function Projects() {
           {projectsData && projectsData.map((project, index) => (
             <div className="card four columns">
               <Link to={"/project/" + project.slug.current} key={project.slug.current}>
+                <div class="item-img">
                   <img 
                     src={project.mainImage.asset.url}
                     alt={project.mainImage.alt}  
                   />
+                </div>
+                <div class="item-desc">
+                  <div class="container">
+                    <h1 class="item-title">Title</h1>
+                    <p class="inner-item-desc">Desc</p>  
+                  </div>
+                </div>
               </Link>
             </div>
           ))} 
