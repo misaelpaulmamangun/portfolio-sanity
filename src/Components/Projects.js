@@ -42,6 +42,12 @@ export default function Projects() {
                     alt={project.mainImage.alt}
                   />
                 </div>
+                <div class="item-desc">
+                  <div class="container">
+                    <h1 class="item-title">Title</h1>
+                    <p class="inner-item-desc">Desc</p>
+                  </div>
+                </div>
               </Link>
             </div>
           ))}
