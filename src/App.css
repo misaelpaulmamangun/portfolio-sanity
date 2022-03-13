@@ -189,7 +189,7 @@ header .navbar ul.navbar-list li.navbar-item a {
 }
 
 .item-img {
-  padding: 1rem;
+  padding: 0.5rem;
   border-bottom: 2px solid;
 }
 
@@ -197,6 +197,7 @@ header .navbar ul.navbar-list li.navbar-item a {
   height: 15rem;
   object-fit: cover;
   object-position: center;
+  border-radius: 0.5rem;
 }
 
 /* End of Projects Page */
