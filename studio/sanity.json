@@ -4,12 +4,11 @@
     "name": "portfolio"
   },
   "api": {
-    "projectId": "je7ph6zr",
+    "projectId": "6kpzhc7k",
     "dataset": "production"
   },
   "plugins": [
     "@sanity/base",
-    "@sanity/components",
     "@sanity/default-layout",
     "@sanity/default-login",
     "@sanity/desk-tool"
