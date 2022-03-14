@@ -1,16 +1,16 @@
-import React from "react";
-import profilePNG from "../img/profile.png";
+import React from 'react'
+import profilePNG from '../img/profile.jpg'
 export default function About() {
   return (
-    <div className="docs-section about-me pb-2">
-      <div className="container">
-        <div className="row">
-          <div className="five columns">
-            <div className="profile-img">
-              <img alt="Profile" src={profilePNG} />
+    <div className='docs-section about-me pb-2'>
+      <div className='container'>
+        <div className='row'>
+          <div className='five columns'>
+            <div className='profile-img'>
+              <img alt='Profile' src={profilePNG} />
             </div>
           </div>
-          <div className="seven columns">
+          <div className='seven columns'>
             <p>
               Hello, My name is Misael Paul Mamangun. I'm a front-end developer
               for almost 3 years. I started to work as a freelance web developer
@@ -20,10 +20,10 @@ export default function About() {
               and VueJS. Now, I am currently working as a front-end developer in
               SimpleApps.
             </p>
-            <button className="button-primary">My Resume</button>
+            <button className='button-primary'>My Resume</button>
           </div>
         </div>
       </div>
     </div>
-  );
+  )
 }
