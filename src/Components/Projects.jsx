@@ -27,7 +27,6 @@ export default function Projects() {
       })
       .catch(console.error)
   }, [])
-  console.log(projectsData)
 
   return (
     <div className='docs-section'>

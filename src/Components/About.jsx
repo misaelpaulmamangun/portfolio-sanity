@@ -1,5 +1,6 @@
 import React from 'react'
-import profilePNG from '../img/profile.jpg'
+import profilePNG from '../assets/img/profile.jpg'
+import Resume from '../assets/docs/Resume.pdf'
 export default function About() {
   return (
     <div className='docs-section about-me pb-2'>
@@ -12,15 +13,15 @@ export default function About() {
           </div>
           <div className='seven columns'>
             <p>
-              Hello, My name is Misael Paul Mamangun. I'm a front-end developer
-              for almost 3 years. I started to work as a freelance web developer
-              when I'm 3rd year in college as a Bachelor of Science in
+              Hello, My name is Misael Paul Mamangun. I am a front-end developer
+              for almost three years. I started to work as a freelance web
+              developer when I'm 3rd year in college as a Bachelor of Science in
               Information Technology student. I have developed company websites
-              using Joomla, WordPress (PSD into a responsive website), ReactJS,
-              and VueJS. Now, I am currently working as a front-end developer in
-              SimpleApps.
+              using Joomla, HTML/CSS, and ReactJS.
             </p>
-            <button className='button-primary'>My Resume</button>
+            <a href={Resume} download='Resume' className='button-primary'>
+              My Resume
+            </a>
           </div>
         </div>
       </div>

@@ -177,6 +177,12 @@ header .navbar ul.navbar-list li.navbar-item a {
   border-radius: 50%;
 }
 
+.about-me a {
+  font-weight: 700;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
 /* End of About ME */
 
 /* Projects Page */
