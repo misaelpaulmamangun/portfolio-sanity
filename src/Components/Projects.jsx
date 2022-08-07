@@ -28,13 +28,21 @@ export default function Projects() {
       .catch(console.error)
   }, [])
 
+  const chunkArray = (arr, size) => {
+    var groupedArray = []
+    for (var i = 0; i < arr?.length; i += size) {
+      groupedArray.push(arr.slice(i, i + size))
+    }
+    return groupedArray
+  }
+
   return (
     <div className='docs-section'>
       <div className='container'>
         <h1>Projects</h1>
-        <div className='row'>
-          {projectsData &&
-            projectsData.map((project, index) => (
+        {chunkArray(projectsData, 3).map((chunk) => (
+          <div className='row'>
+            {chunk.map((project, index) => (
               <div className='card four columns' key={project.slug.current}>
                 <div className='item-img'>
                   <img
@@ -60,7 +68,8 @@ export default function Projects() {
                 </div>
               </div>
             ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   )
