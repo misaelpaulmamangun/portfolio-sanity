@@ -1,7 +1,7 @@
 {
   "root": true,
   "project": {
-    "name": "portfolio"
+    "name": "my-portfolio"
   },
   "api": {
     "projectId": "6kpzhc7k",
@@ -15,9 +15,7 @@
   ],
   "env": {
     "development": {
-      "plugins": [
-        "@sanity/vision"
-      ]
+      "plugins": ["@sanity/vision"]
     }
   },
   "parts": [
